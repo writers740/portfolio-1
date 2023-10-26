@@ -45,7 +45,7 @@ if(isset($_POST["send"])){
     } catch (Exception $e) {
         echo "
         <script>
-        document.querySelector('#message').textContent = 'your message have been successfully sent'
+        
         alert('Message could not be sent. Mailer Error: {$mail->ErrorInfo}');
         </script>";
     }
